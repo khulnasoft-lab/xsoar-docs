@@ -93,7 +93,7 @@ jobs:
 
   deploy:
     docker:
-      - image: circleci/python:3.9.1-buster-node
+      - image: circleci/python:3.10.1-buster-node
     resource_class: small
     parameters:
       post_comment:
