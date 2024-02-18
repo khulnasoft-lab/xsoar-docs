@@ -1,6 +1,7 @@
 name: Verify Site Links
 
 on:
+  workflow_dispatch:
   # push: {} #  uncommnet for testing
   schedule: # daily at 12 noon UTC
     - cron: '0 12 * * *'
