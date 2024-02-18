@@ -132,7 +132,7 @@ You can configure the *service_mail* and *mail_sender_instance* parameters for t
 - Send the email from one default email address - If multiple email-sender integrations or instances are configured, you can configure the *mail_sender_instance* parameter to a specific integration instance.
 - Send the emails from a different sender each time - This is particularly useful for MSSPs when the sender address changes per customer, incident type, and so on. You can configure the parameters to be mandatory, so each time you click **send reply** (**Email Communication** layout) or **Send New Email** / **Reply To Thread** (**Email Threads** layout), a pop-up will appear in which you will need to enter the service_mail email address and mail_sender_instance name.
 
-  ![EmailCommunication_PopUp](https://github.com/demisto/content-docs/blob/master/docs/doc_imgs/reference/EmailCommunication_PopUp.png?raw=true)
+  ![EmailCommunication_PopUp](https://github.com/khulnasoft-lab/xsoar-docs/blob/master/docs/doc_imgs/reference/EmailCommunication_PopUp.png?raw=true)
 		
 #### To configure the service_mail and mail_sender_instance parameters
 1. Navigate to the **Automation** tab.
@@ -146,7 +146,7 @@ You can configure the *service_mail* and *mail_sender_instance* parameters for t
    - To send the email a specific integration instance: In the **Initial value** field, enter the name of the integration instance you wish to use.
    - To enter an integration instance to use each time: Mark the **mandatory** checkbox and leave the **Initial value** empty.  
 
-     ![EmailCommunication_SendEmailReplySettings](https://github.com/demisto/content-docs/blob/master/docs/doc_imgs/reference/EmailCommunication_SendEmailReplySettings.png?raw=true)  
+     ![EmailCommunication_SendEmailReplySettings](https://github.com/khulnasoft-lab/xsoar-docs/blob/master/docs/doc_imgs/reference/EmailCommunication_SendEmailReplySettings.png?raw=true)  
 
 7. Click **Save**.
 8. Click the three vertical dots and select the **Reattach Automation** option.
@@ -224,7 +224,7 @@ In this layout there are three interactive sections in which you can specify one
 ### Email Threads Layout
 There are several interactive sections in the **Email Threads** layout.
 
-![Layout](https://github.com/demisto/content-docs/blob/master/docs/doc_imgs/reference/EmailCommunication_EmailThreadsLayout.png?raw=true)
+![Layout](https://github.com/khulnasoft-lab/xsoar-docs/blob/master/docs/doc_imgs/reference/EmailCommunication_EmailThreadsLayout.png?raw=true)
 
 **To start a new email thread:**
 1. In the **Step 1 (New Thread)** section, enter email recipients and an email subject.  CC and BCC recipients are optional.

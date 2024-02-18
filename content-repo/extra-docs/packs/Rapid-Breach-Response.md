@@ -68,7 +68,7 @@ The Incident Info tab provides the analyst with all the relevant information to 
     - Sigma
 - The links the indicators were fetched from
 
-![image](https://raw.githubusercontent.com/demisto/content-docs/456ed4f4796529c77f4d5903419145263e0b6c00/docs/doc_imgs/reference/RapidBreachResponseLayout/Incident_Info.png)
+![image](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/456ed4f4796529c77f4d5903419145263e0b6c00/docs/doc_imgs/reference/RapidBreachResponseLayout/Incident_Info.png)
 
 #### IR Procedures
 
@@ -85,7 +85,7 @@ The layout consists of dynamic sections, including:
     
 If the header is not used in the playbook or it doesn't have the required task type, the layout shows ‘No tasks found’.
 
-![image](https://raw.githubusercontent.com/demisto/content-docs/456ed4f4796529c77f4d5903419145263e0b6c00/docs/doc_imgs/reference/RapidBreachResponseLayout/IR_Procedures.png)
+![image](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/456ed4f4796529c77f4d5903419145263e0b6c00/docs/doc_imgs/reference/RapidBreachResponseLayout/IR_Procedures.png)
   
 #### Hunting Results
 
@@ -94,7 +94,7 @@ The Hunting Results tab has 3 sections which provide the analyst with:
 - The raw results of Panorama and Cortex Data Lake
 - Threat hunting results based on unified fields for PANW, Splunk, and QRadar
 
-![image](https://raw.githubusercontent.com/demisto/content-docs/4da8f27ab1863b7100396bdfa2d2bb6671886a45/docs/doc_imgs/reference/RapidBreachResponseLayout/Hunting_Results.png)
+![image](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/4da8f27ab1863b7100396bdfa2d2bb6671886a45/docs/doc_imgs/reference/RapidBreachResponseLayout/Hunting_Results.png)
 
 ### Automations - Dynamic Sections
 The following new dynamic sections are available from Cortex XSOAR 6.0.0.

@@ -36,23 +36,23 @@ On your 2016 Domain Controller, create a new OU (Organizational Unit) and move t
 2. Right-click the domain, and select **New** > **Organizational Unit**.
 
 For example:
- !["Organizational Unit"](https://raw.githubusercontent.com/demisto/content-docs/1b625fbf790242cfc36ac079e1c3f5e027015d19/docs/doc_imgs/reference/PowershellRemoting/1-OU.JPG "Organizational Unit")
+ !["Organizational Unit"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/1b625fbf790242cfc36ac079e1c3f5e027015d19/docs/doc_imgs/reference/PowershellRemoting/1-OU.JPG "Organizational Unit")
 
 3. Drag and drop the computer account to the new OU.
- !["Organizational Unit"](https://raw.githubusercontent.com/demisto/content-docs/bdf04770e31fc2f821053bfeea7353893480e318/docs/doc_imgs/reference/PowershellRemoting/2-OU.JPG "Organizational Unit")
+ !["Organizational Unit"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/bdf04770e31fc2f821053bfeea7353893480e318/docs/doc_imgs/reference/PowershellRemoting/2-OU.JPG "Organizational Unit")
 
 Keep in mind that you can also use an existing OU. In this article we recommend creating a new OU for testing purposes.
 ### GPO settings
 1. Create a new GPO.
    1. Open the Group Policy Management tool. 
    2. Right-click the OU for which you want to apply the GPO (where the relevant computer accounts are located) and select **Create GPO in this domain and Link it here**.
-!["Group Policy Management tool"](https://raw.githubusercontent.com/demisto/content-docs/bdf04770e31fc2f821053bfeea7353893480e318/docs/doc_imgs/reference/PowershellRemoting/3-gpo.JPG "Group Policy Management tool")
+!["Group Policy Management tool"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/bdf04770e31fc2f821053bfeea7353893480e318/docs/doc_imgs/reference/PowershellRemoting/3-gpo.JPG "Group Policy Management tool")
 
    3. Provide a name for the new GPO and click **OK**.
- !["Group Policy Management Object"](https://raw.githubusercontent.com/demisto/content-docs/bdf04770e31fc2f821053bfeea7353893480e318/docs/doc_imgs/reference/PowershellRemoting/4-gpo.JPG "Group Policy Management Object")
+ !["Group Policy Management Object"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/bdf04770e31fc2f821053bfeea7353893480e318/docs/doc_imgs/reference/PowershellRemoting/4-gpo.JPG "Group Policy Management Object")
 
     4. Right-click the new GPO and click **Edit**.
- !["Group Policy Management Object"](https://raw.githubusercontent.com/demisto/content-docs/057a6ef277e847775b6ee401d757a15088f97618/docs/doc_imgs/reference/PowershellRemoting/4_1-gpo.jpg "Group Policy Management Object")
+ !["Group Policy Management Object"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/057a6ef277e847775b6ee401d757a15088f97618/docs/doc_imgs/reference/PowershellRemoting/4_1-gpo.jpg "Group Policy Management Object")
  
 2. Enable PowerShell Remote
 
@@ -64,7 +64,7 @@ Keep in mind that you can also use an existing OU. In this article we recommend 
    5. Click **OK**.
    
    This setting will enable Powershell remoting to the relevant hosts.
- !["Allow remote server management"](https://raw.githubusercontent.com/demisto/content-docs/057a6ef277e847775b6ee401d757a15088f97618/docs/doc_imgs/reference/PowershellRemoting/5-gpo.JPG "Allow remote server management")
+ !["Allow remote server management"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/057a6ef277e847775b6ee401d757a15088f97618/docs/doc_imgs/reference/PowershellRemoting/5-gpo.JPG "Allow remote server management")
 
 3.  Allow Basic Authentication. 
 Configure this setting only if you want to use Basic authentication and not Negotiate.
@@ -74,7 +74,7 @@ Configure this setting only if you want to use Basic authentication and not Nego
     3. Click **Edit policy setting**.
     3. Select **Enabled**.
     5. Click **OK**.
-!["Allow basic Authentication"](https://raw.githubusercontent.com/demisto/content-docs/057a6ef277e847775b6ee401d757a15088f97618/docs/doc_imgs/reference/PowershellRemoting/6-gpo.JPG "Allow basic Authentication")
+!["Allow basic Authentication"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/057a6ef277e847775b6ee401d757a15088f97618/docs/doc_imgs/reference/PowershellRemoting/6-gpo.JPG "Allow basic Authentication")
 
 4. Configure the WinRM service.
 
@@ -82,7 +82,7 @@ Configure this setting only if you want to use Basic authentication and not Nego
    
    2. Select **Windows Remote Management (WS-Management)**.
 
-   !["WinRM service"](https://raw.githubusercontent.com/demisto/content-docs/de30769a3caa7d8d880563ff613857c7486fbcbf/docs/doc_imgs/reference/PowershellRemoting/7-gpo.JPG "WinRM service")
+   !["WinRM service"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/de30769a3caa7d8d880563ff613857c7486fbcbf/docs/doc_imgs/reference/PowershellRemoting/7-gpo.JPG "WinRM service")
 
    3. Select **Define this policy setting**.
     
@@ -90,16 +90,16 @@ Configure this setting only if you want to use Basic authentication and not Nego
 
    5. Click ***OK**.
 
-!["WinRM service startup"](https://raw.githubusercontent.com/demisto/content-docs/de30769a3caa7d8d880563ff613857c7486fbcbf/docs/doc_imgs/reference/PowershellRemoting/8-gpo.JPG "WinRM service startup")
+!["WinRM service startup"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/de30769a3caa7d8d880563ff613857c7486fbcbf/docs/doc_imgs/reference/PowershellRemoting/8-gpo.JPG "WinRM service startup")
 
 ### Workgroup settings
 It is possible to configure the Powershell Remoting to work in a workgroup (non-domain) environment. The network settings and configuration are the same as described in the [Domain Settings](#domain-settings) section. To configure the host within the workgroup to accept PowerShell remote connections:
 
 1. For the host on which to enable PowerShell remoting, open the Powershell command prompt as an administrator and type **Enable-PSRemoting**.
 
-!["Enable-PSRemoting"](https://raw.githubusercontent.com/demisto/content-docs/de30769a3caa7d8d880563ff613857c7486fbcbf/docs/doc_imgs/reference/PowershellRemoting/14-workgroup.JPG "Enable-PSRemoting")
+!["Enable-PSRemoting"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/de30769a3caa7d8d880563ff613857c7486fbcbf/docs/doc_imgs/reference/PowershellRemoting/14-workgroup.JPG "Enable-PSRemoting")
 2. From the Administrative command line run the command **winrm set winrm/config/client @{TrustedHosts="*"}**.
-!["Trusted hosts"](https://raw.githubusercontent.com/demisto/content-docs/057a6ef277e847775b6ee401d757a15088f97618/docs/doc_imgs/reference/PowershellRemoting/15-workgroup.JPG "Trusted hosts")
+!["Trusted hosts"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/057a6ef277e847775b6ee401d757a15088f97618/docs/doc_imgs/reference/PowershellRemoting/15-workgroup.JPG "Trusted hosts")
 
 
 ## Integration Configuration
@@ -147,18 +147,18 @@ or
 **netstat -na 1 | find "5986"**
 
 The result should show that the host is listening on the port.
-!["Netstat"](https://raw.githubusercontent.com/demisto/content-docs/de30769a3caa7d8d880563ff613857c7486fbcbf/docs/doc_imgs/reference/PowershellRemoting/9-trouble.JPG "Netstat")
+!["Netstat"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/de30769a3caa7d8d880563ff613857c7486fbcbf/docs/doc_imgs/reference/PowershellRemoting/9-trouble.JPG "Netstat")
 
 If the host is not listening on the port, make sure the host actually received the GPO that was previously configured.
 
 From the command line run: 
 **gpresult /r -scope computer**
-!["gpresult"](https://raw.githubusercontent.com/demisto/content-docs/de30769a3caa7d8d880563ff613857c7486fbcbf/docs/doc_imgs/reference/PowershellRemoting/10-trouble.JPG "gpresult")
+!["gpresult"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/de30769a3caa7d8d880563ff613857c7486fbcbf/docs/doc_imgs/reference/PowershellRemoting/10-trouble.JPG "gpresult")
 The GPO you created should appear under COMPUTER SETTINGS and the Applied Group Policy Objects.
-!["Applied GPO"](https://raw.githubusercontent.com/demisto/content-docs/de30769a3caa7d8d880563ff613857c7486fbcbf/docs/doc_imgs/reference/PowershellRemoting/10-trouble.JPG "Applied GPO")
+!["Applied GPO"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/de30769a3caa7d8d880563ff613857c7486fbcbf/docs/doc_imgs/reference/PowershellRemoting/10-trouble.JPG "Applied GPO")
 
 If the GPO does not appear, make sure that the computer account is in the correct OU. If not, make sure to move the computer account to the correct OU. Regardless if the computer account is in the OU, from the hosts command line run the **gpupdate /force** command.
-!["Gpupdate /force"](https://raw.githubusercontent.com/demisto/content-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/11-trouble.JPG "Gpupdate /force")
+!["Gpupdate /force"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/11-trouble.JPG "Gpupdate /force")
 
 The result should show that the computer policy updated successfully.
 
@@ -170,13 +170,13 @@ If when you click **Test** in the integration settings no network connection is 
 ### Name Resolution Troubleshooting
 If you receive the following error in the integration test, make sure that you provided a valid DNS server address in the integration settings and that the DNS server has a relevant DNS record for the host you want to resolve.
 Also make sure your XSOAR has network access on port 53 to the DNS server.
-!["DNS resolve error"](https://raw.githubusercontent.com/demisto/content-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/error1.jpg "DNS resolve error")
+!["DNS resolve error"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/error1.jpg "DNS resolve error")
 ### Network Connectivity Troubleshooting
 If you receive the following error in the integration test, verify you have network access to the tested host from XSOAR on ports 5985 or 5986 accordingly. Check the network or host firewall logs and adjust the rules accordingly.
-!["Network access error"](https://raw.githubusercontent.com/demisto/content-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/error2.jpg "Network access error")
+!["Network access error"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/error2.jpg "Network access error")
 ### Authentication Troubleshooting
 If you receive the following error in the integration test, check the provided username and password by attempting to connect to the tested host locally or via terminal services. Make sure that you are able to login with the provided credentials. If the login fails, verify that the username and password are correct or that the user has sufficient privileges on the host. If the password is wrong, reset it in the Active Directory.
-!["Session error"](https://raw.githubusercontent.com/demisto/content-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/error3.jpg "Session error")
+!["Session error"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/error3.jpg "Session error")
 
 If you are using Basic Authentication, make sure to provide a local user and not a domain user.
 Another issue could be related to the Powershell remoting settings. Review the [Host Troubleshooting](#host-troubleshooting) section above accordingly.
@@ -209,52 +209,52 @@ To enable PowerShell remote over SSL perform the following.
 
 
 2. From your Active Directory Certificate Services server, open the Certification Authority tool.
-!["CA settings"](https://raw.githubusercontent.com/demisto/content-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/18-cert.JPG "CA settings")
+!["CA settings"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/18-cert.JPG "CA settings")
 
 3. Right-click **Certificate Templates** and select **Manage**.
-!["CA settings"](https://raw.githubusercontent.com/demisto/content-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/19-cert.JPG "CA settings")
+!["CA settings"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/19-cert.JPG "CA settings")
 
 4. Right-click **Web Server** and select **Duplicate Template**.
-!["CA settings"](https://raw.githubusercontent.com/demisto/content-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/20-cert.JPG "CA settings")
+!["CA settings"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/20-cert.JPG "CA settings")
 
 5. In the new template, click the **General** tab. Type the new template name (for example WinRM) and select the validity period for the certificate.
-!["CA settings"](https://raw.githubusercontent.com/demisto/content-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/21-cert.JPG "CA settings")
+!["CA settings"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/21-cert.JPG "CA settings")
 
 6. Click the **Subject Name** tab and select **Build from this Active Directory information**. For the Subject name format,  select **Common Name**. Under Include this information in alternate subject name, select **DNS name** and deselect **User principal name (UPN)**.
-!["CA settings"](https://raw.githubusercontent.com/demisto/content-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/22-cert.JPG "CA settings")
+!["CA settings"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/22-cert.JPG "CA settings")
 
 7. Click the **Security** tab and select the following permissions:
     - Read
     - Enroll
     - Autoenroll
 
-!["CA settings"](https://raw.githubusercontent.com/demisto/content-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/23-cert.JPG "CA settings")
+!["CA settings"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/23-cert.JPG "CA settings")
 
 8. Click **OK**. Your new template will now be saved.
 8. In the Certification Authority console, click **Certificate Templates** > **New** > **Certificate Template to Issue**.
-!["CA settings"](https://raw.githubusercontent.com/demisto/content-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/24-cert.JPG "CA settings")
+!["CA settings"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/24-cert.JPG "CA settings")
 
 9. Select your new template and click **OK**.
-!["CA settings"](https://raw.githubusercontent.com/demisto/content-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/25-cert.JPG "CA settings")
+!["CA settings"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/25-cert.JPG "CA settings")
 #### Configure GPO
 1. Open the GPMC (Group Policy Management Console).
 2. Create and link a new GPO to your relevant OU.
-!["Cert GPO"](https://raw.githubusercontent.com/demisto/content-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/26-gpo.JPG "Cert GPO")
+!["Cert GPO"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/26-gpo.JPG "Cert GPO")
 
 3. Edit the new GPO and navigate to **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Public Key Policies** > **Certificate Services Client - Auto-Enrollment**.
-!["Cert GPO"](https://raw.githubusercontent.com/demisto/content-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/27-gpo.JPG "Cert GPO")
+!["Cert GPO"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/27-gpo.JPG "Cert GPO")
 
 4. Under Configuration Model, select **Enabled** and click the checkbox for **Update Certificates that use certificate templates**. 
-!["Cert GPO"](https://raw.githubusercontent.com/demisto/content-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/28-gpo.JPG "Cert GPO")
+!["Cert GPO"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/28-gpo.JPG "Cert GPO")
 
 5. Click **OK**.
 
 6. Review the Certification Authority and make sure a certificate was issued for your host.
-!["Issued certificates"](https://raw.githubusercontent.com/demisto/content-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/29-cert.JPG "Issued certificates")
+!["Issued certificates"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/29-cert.JPG "Issued certificates")
 
 7. On the host on which you want to configure WinRM with HTTPS, open a command prompt as an administrator and type **winrm quickconfig -transport:https**.
-!["Administrator"](https://raw.githubusercontent.com/demisto/content-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/13-workgroup.JPG "Administrator")
-!["Configure HTTPS"](https://raw.githubusercontent.com/demisto/content-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/30-ssl.JPG "Configure HTTPS")
+!["Administrator"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/13-workgroup.JPG "Administrator")
+!["Configure HTTPS"](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/e017a13b2b37d1107c6cce33cb788163f716230a/docs/doc_imgs/reference/PowershellRemoting/30-ssl.JPG "Configure HTTPS")
 
 Since Microsoft doesn't currently have a GPO to set up the HTTPS listener, it is possible to create a login script that contains this command. Creation of a login script and deploying it via GPO is not covered in this article.
 

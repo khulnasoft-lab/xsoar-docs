@@ -97,7 +97,7 @@ if [[ ( "$PULL_REQUEST" == "true" || -n "$CI_PULL_REQUEST" ) && "$CONTENT_BRANCH
         fi
     fi
     if [[ -z "$DIFF_FILES" && -z "$CONTENT_DOC_NO_FETCH" ]]; then
-        git remote get-url origin || git remote add origin https://github.com/demisto/content-docs.git
+        git remote get-url origin || git remote add origin https://github.com/khulnasoft-lab/xsoar-docs.git
         git remote -v
         git fetch origin
         echo "HEAD ref $(git rev-parse HEAD). remotes/origin/master ref: $(git rev-parse remotes/origin/master)"

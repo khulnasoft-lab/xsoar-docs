@@ -285,7 +285,7 @@ def test_process_extra_doc(tmp_path, mdx_server):
         assert f.readline().startswith(f'id: {res.id}')
         assert f.readline().startswith(f'title: "{res.name}"')
         assert f.readline().startswith(
-            'custom_edit_url: https://github.com/demisto/content-docs/blob/master/content-repo/extra-docs/integrations')
+            'custom_edit_url: https://github.com/khulnasoft-lab/xsoar-docs/blob/master/content-repo/extra-docs/integrations')
 
 
 def test_process_private_doc(tmp_path, mdx_server):

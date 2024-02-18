@@ -36,11 +36,11 @@ def download_site_build(event_file: str, download_path: str = "build-site.tar.gz
     target_url = github_event['target_url']
     print(f'target_url: {target_url}')
     # target_url is of the form:
-    # https://circleci.com/gh/demisto/content-docs/142?utm_campaign=vcs-integration-link&utm_medium=referral&utm_source=github-build-li
+    # https://circleci.com/gh/khulnasoft-lab/xsoar-docs/142?utm_campaign=vcs-integration-link&utm_medium=referral&utm_source=github-build-li
     target_url = target_url.split('?')[0]
     build_num = target_url.split('/')[-1]
     print(f'circleci build: {build_num}')
-    circle_url = f'https://circleci.com/api/v1.1/project/github/demisto/content-docs/{build_num}'
+    circle_url = f'https://circleci.com/api/v1.1/project/github/khulnasoft-lab/xsoar-docs/{build_num}'
     print(f'Checking circleci url: {circle_url}')
     res = requests.get(circle_url, verify=VERIFY_SSL)
     res.raise_for_status()

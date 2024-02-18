@@ -209,6 +209,6 @@ Steps to create the relationships:
     }
    ```
 
-![Indicator Fields in Cortex XSOAR](https://raw.githubusercontent.com/demisto/content-docs/b202510c98d7812711b7323ad21e9bcc23e0983d/static/img/Cortex%20XSOAR%20indicator%20fields.png)
+![Indicator Fields in Cortex XSOAR](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/b202510c98d7812711b7323ad21e9bcc23e0983d/static/img/Cortex%20XSOAR%20indicator%20fields.png)
 
 *Note:* In indicators of type "File", if you have multiple hash types for the same file (i.e., MD5, SHA256, etc.), you can use the corresponding `"fields"` to associate all hashes to the same object. The supported fields are: `md5`, `sha1`, `sha256`, `sha512`, `ssdeep`. You can use any of the aforementioned hash types as the indicator value for an indicator of type "File".

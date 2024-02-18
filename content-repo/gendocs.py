@@ -403,7 +403,7 @@ def process_release_doc(target_dir: str, release_file: str) -> Optional[DocInfo]
         if not desc_match:
             raise ValueError('Published on... not found for release: ' + name)
         doc_info = DocInfo(name, f'Content Release {name}', desc_match[0], release_file)
-        edit_url = f'https://github.com/demisto/content-docs/blob/master/content-repo/extra-docs/releases/{name}.md'
+        edit_url = f'https://github.com/khulnasoft-lab/xsoar-docs/blob/master/content-repo/extra-docs/releases/{name}.md'
         #  replace the title to be with one # so it doesn't appear in the TOC
         content = re.sub(r'^## Demisto Content Release Notes', '# Demisto Content Release Notes', content)
         content = f'---\nid: {name}\nsidebar_label: "{name}"\ncustom_edit_url: {edit_url}\n---\n\n' + content
@@ -478,7 +478,7 @@ def process_extra_readme_doc(target_dir: str, prefix: str, readme_file: str, pri
             print(f'Process README Private file: {readme_file}')
             header = f'---\nid: {file_id}\ntitle: "{name}"\ncustom_edit_url: null\n---\n\n'
         else:
-            edit_url = f'https://github.com/demisto/content-docs/blob/master/content-repo/extra-docs/{prefix}/{readme_file_name}'
+            edit_url = f'https://github.com/khulnasoft-lab/xsoar-docs/blob/master/content-repo/extra-docs/{prefix}/{readme_file_name}'
             header = f'---\nid: {file_id}\ntitle: "{name}"\ncustom_edit_url: {edit_url}\n---\n\n'
         content = get_deprecated_data(yml_data, desc, readme_file) + content
         content = get_beta_data(yml_data, content) + content
@@ -896,7 +896,7 @@ def generate_items(doc_infos, full_prefix):
 
 def main():
     parser = argparse.ArgumentParser(description='''Generate Content Docs. You should probably not call this script directly.
-See: https://github.com/demisto/content-docs/#generating-reference-docs''',
+See: https://github.com/khulnasoft-lab/xsoar-docs/#generating-reference-docs''',
                                      formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument("-t", "--target", type=os.path.normpath, help="Target dir to generate docs at.", required=True)
     parser.add_argument("-d", "--dir", type=os.path.normpath, help="Content repo dir.", required=True)
@@ -950,7 +950,7 @@ See: https://github.com/demisto/content-docs/#generating-reference-docs''',
         f.write("\n\n## Content Release Notes\n\n")
         f.write(index_doc_infos(release_doc_infos, RELEASES_PREFIX, headers=('Name', 'Date')))
         f.write("\n\nAdditional archived release notes are available"
-                " [here](https://github.com/demisto/content-docs/tree/master/content-repo/extra-docs/releases).")
+                " [here](https://github.com/khulnasoft-lab/xsoar-docs/tree/master/content-repo/extra-docs/releases).")
     with open(articles_index_target, 'a', encoding='utf-8') as f:
         if MAX_FILES > 0:
             f.write(f'\n\n# =====<br/>BUILD PREVIEW only {MAX_FILES} files from each category! <br/>=====\n\n')

@@ -10,7 +10,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 def test_download_site_build_non_forked_pr(requests_mock, test_file):
     with open(f'{BASE_DIR}/test_data/{test_file}', 'r') as f:
         circleci_response = f.read()
-    requests_mock.get('https://circleci.com/api/v1.1/project/github/demisto/content-docs/153', text=circleci_response)
+    requests_mock.get('https://circleci.com/api/v1.1/project/github/khulnasoft-lab/xsoar-docs/153', text=circleci_response)
     res = download_site_build(f'{BASE_DIR}/test_data/github-status-event.json')
     assert not res
     assert requests_mock.call_count == 1
@@ -20,8 +20,8 @@ def test_download_site_build_forked_pr(requests_mock, tmp_path):
     dest_file = str(tmp_path / 'download.txt')
     with open(f'{BASE_DIR}/test_data/circleci-forked-build.json', 'r') as f:
         circleci_response = f.read()
-    requests_mock.get('https://circleci.com/api/v1.1/project/github/demisto/content-docs/153', text=circleci_response)
-    requests_mock.get('https://circleci.com/api/v1.1/project/github/demisto/content-docs/153/artifacts', text="""
+    requests_mock.get('https://circleci.com/api/v1.1/project/github/khulnasoft-lab/xsoar-docs/153', text=circleci_response)
+    requests_mock.get('https://circleci.com/api/v1.1/project/github/khulnasoft-lab/xsoar-docs/153/artifacts', text="""
 [ {
   "path" : "build-site.tar.gz",
   "pretty_path" : "build-site.tar.gz",

@@ -194,7 +194,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/demisto/content-docs/tree/master",
+          editUrl: "https://github.com/khulnasoft-lab/xsoar-docs/tree/master",
           routeBasePath: "docs",
           include: ["**/*.md", "**/*.mdx"], // Extensions to include.
           docLayoutComponent: "@theme/DocPage",

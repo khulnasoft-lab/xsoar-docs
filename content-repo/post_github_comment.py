@@ -18,10 +18,10 @@ ROOT_DIR = os.path.join(os.path.dirname(__file__), '..')
 def get_post_url():
     if os.getenv('PR_NUM'):
         pr_num = os.getenv('PR_NUM')
-        return f'https://api.github.com/repos/demisto/content-docs/issues/{pr_num}/comments'
+        return f'https://api.github.com/repos/khulnasoft-lab/xsoar-docs/issues/{pr_num}/comments'
     if os.getenv('CIRCLE_PULL_REQUEST'):
-        # change: https://github.com/demisto/content-docs/pull/9
-        # to: https://api.github.com/repos/demisto/content-docs/issues/9/comments
+        # change: https://github.com/khulnasoft-lab/xsoar-docs/pull/9
+        # to: https://api.github.com/repos/khulnasoft-lab/xsoar-docs/issues/9/comments
         post_url = os.environ['CIRCLE_PULL_REQUEST'].replace('github.com', 'api.github.com/repos').replace('pull', 'issues') + "/comments"
     else:
         # try to get from comment
@@ -32,7 +32,7 @@ def get_post_url():
             return
         issue_id = m.group(1)
         print("Issue id found from last commit comment: " + issue_id)
-        post_url = "https://api.github.com/repos/demisto/content-docs/issues/{}/comments".format(issue_id)
+        post_url = "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/issues/{}/comments".format(issue_id)
     return post_url
 
 
@@ -133,7 +133,7 @@ def main():
     desc = """Post a message to github about the deployed site. Relies on environment variables:
 GITHUB_TOKEN: api key of user to use for posting
 PR_NUM: if set will use this as the pull request number. Otherwise will move on to CIRCLE_PULL_REQUEST
-CIRCLE_PULL_REQUEST: pull request url to use to get the pull id. Such as: https://github.com/demisto/content-docs/pull/9
+CIRCLE_PULL_REQUEST: pull request url to use to get the pull id. Such as: https://github.com/khulnasoft-lab/xsoar-docs/pull/9
 if CIRCLE_PULL_REQUEST will try to get issue id from last commit comment (case of merge into master)
 CIRCLE_BRANCH: if set to master treats as a production deployment
 SKIP_SSL_VERIFY: if set will skip ssl verification (used for testing behind GP)

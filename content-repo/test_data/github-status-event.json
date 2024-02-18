@@ -4,7 +4,7 @@
         {
             "commit": {
                 "sha": "036ceaa0a0b631d9f487e436c9523086a0c63ed0",
-                "url": "https://api.github.com/repos/demisto/content-docs/commits/036ceaa0a0b631d9f487e436c9523086a0c63ed0"
+                "url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/commits/036ceaa0a0b631d9f487e436c9523086a0c63ed0"
             },
             "name": "master",
             "protected": true
@@ -31,7 +31,7 @@
             "type": "User",
             "url": "https://api.github.com/users/mchasepan"
         },
-        "comments_url": "https://api.github.com/repos/demisto/content-docs/commits/036ceaa0a0b631d9f487e436c9523086a0c63ed0/comments",
+        "comments_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/commits/036ceaa0a0b631d9f487e436c9523086a0c63ed0/comments",
         "commit": {
             "author": {
                 "date": "2020-10-16T14:12:03Z",
@@ -47,9 +47,9 @@
             "message": "Update certification.md (#344)",
             "tree": {
                 "sha": "12a0fd3d491ee6926bf417aac52af1730c484daf",
-                "url": "https://api.github.com/repos/demisto/content-docs/git/trees/12a0fd3d491ee6926bf417aac52af1730c484daf"
+                "url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/git/trees/12a0fd3d491ee6926bf417aac52af1730c484daf"
             },
-            "url": "https://api.github.com/repos/demisto/content-docs/git/commits/036ceaa0a0b631d9f487e436c9523086a0c63ed0",
+            "url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/git/commits/036ceaa0a0b631d9f487e436c9523086a0c63ed0",
             "verification": {
                 "payload": "tree 12a0fd3d491ee6926bf417aac52af1730c484daf\nparent ee44ab93e3eefb425ade945bcdbb51fb03d0a47a\nauthor Matt Chase <52938925+mchasepan@users.noreply.github.com> 1602857523 -0400\ncommitter GitHub <noreply@github.com> 1602857523 -0400\n\nUpdate certification.md (#344)\n\n",
                 "reason": "valid",
@@ -77,17 +77,17 @@
             "type": "User",
             "url": "https://api.github.com/users/web-flow"
         },
-        "html_url": "https://github.com/demisto/content-docs/commit/036ceaa0a0b631d9f487e436c9523086a0c63ed0",
+        "html_url": "https://github.com/khulnasoft-lab/xsoar-docs/commit/036ceaa0a0b631d9f487e436c9523086a0c63ed0",
         "node_id": "MDY6Q29tbWl0MjI1MzQzODg2OjAzNmNlYWEwYTBiNjMxZDlmNDg3ZTQzNmM5NTIzMDg2YTBjNjNlZDA=",
         "parents": [
             {
-                "html_url": "https://github.com/demisto/content-docs/commit/ee44ab93e3eefb425ade945bcdbb51fb03d0a47a",
+                "html_url": "https://github.com/khulnasoft-lab/xsoar-docs/commit/ee44ab93e3eefb425ade945bcdbb51fb03d0a47a",
                 "sha": "ee44ab93e3eefb425ade945bcdbb51fb03d0a47a",
-                "url": "https://api.github.com/repos/demisto/content-docs/commits/ee44ab93e3eefb425ade945bcdbb51fb03d0a47a"
+                "url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/commits/ee44ab93e3eefb425ade945bcdbb51fb03d0a47a"
             }
         ],
         "sha": "036ceaa0a0b631d9f487e436c9523086a0c63ed0",
-        "url": "https://api.github.com/repos/demisto/content-docs/commits/036ceaa0a0b631d9f487e436c9523086a0c63ed0"
+        "url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/commits/036ceaa0a0b631d9f487e436c9523086a0c63ed0"
     },
     "context": "ci/circleci: build",
     "created_at": "2020-10-16T14:40:41+00:00",
@@ -105,7 +105,7 @@
         "website_url": "https://www.paloaltonetworks.com"
     },
     "id": 11074477310,
-    "name": "demisto/content-docs",
+    "name": "khulnasoft-lab/xsoar-docs",
     "organization": {
         "avatar_url": "https://avatars1.githubusercontent.com/u/11011767?v=4",
         "description": "Automated and collaborative incident response platform",
@@ -121,50 +121,50 @@
         "url": "https://api.github.com/orgs/demisto"
     },
     "repository": {
-        "archive_url": "https://api.github.com/repos/demisto/content-docs/{archive_format}{/ref}",
+        "archive_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/{archive_format}{/ref}",
         "archived": false,
-        "assignees_url": "https://api.github.com/repos/demisto/content-docs/assignees{/user}",
-        "blobs_url": "https://api.github.com/repos/demisto/content-docs/git/blobs{/sha}",
-        "branches_url": "https://api.github.com/repos/demisto/content-docs/branches{/branch}",
-        "clone_url": "https://github.com/demisto/content-docs.git",
-        "collaborators_url": "https://api.github.com/repos/demisto/content-docs/collaborators{/collaborator}",
-        "comments_url": "https://api.github.com/repos/demisto/content-docs/comments{/number}",
-        "commits_url": "https://api.github.com/repos/demisto/content-docs/commits{/sha}",
-        "compare_url": "https://api.github.com/repos/demisto/content-docs/compare/{base}...{head}",
-        "contents_url": "https://api.github.com/repos/demisto/content-docs/contents/{+path}",
-        "contributors_url": "https://api.github.com/repos/demisto/content-docs/contributors",
+        "assignees_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/assignees{/user}",
+        "blobs_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/git/blobs{/sha}",
+        "branches_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/branches{/branch}",
+        "clone_url": "https://github.com/khulnasoft-lab/xsoar-docs.git",
+        "collaborators_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/collaborators{/collaborator}",
+        "comments_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/comments{/number}",
+        "commits_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/commits{/sha}",
+        "compare_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/compare/{base}...{head}",
+        "contents_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/contents/{+path}",
+        "contributors_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/contributors",
         "created_at": "2019-12-02T10:08:43Z",
         "default_branch": "master",
-        "deployments_url": "https://api.github.com/repos/demisto/content-docs/deployments",
+        "deployments_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/deployments",
         "description": "Demisto Content Developer Docs",
         "disabled": false,
-        "downloads_url": "https://api.github.com/repos/demisto/content-docs/downloads",
-        "events_url": "https://api.github.com/repos/demisto/content-docs/events",
+        "downloads_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/downloads",
+        "events_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/events",
         "fork": false,
         "forks": 19,
         "forks_count": 19,
-        "forks_url": "https://api.github.com/repos/demisto/content-docs/forks",
-        "full_name": "demisto/content-docs",
-        "git_commits_url": "https://api.github.com/repos/demisto/content-docs/git/commits{/sha}",
-        "git_refs_url": "https://api.github.com/repos/demisto/content-docs/git/refs{/sha}",
-        "git_tags_url": "https://api.github.com/repos/demisto/content-docs/git/tags{/sha}",
-        "git_url": "git://github.com/demisto/content-docs.git",
+        "forks_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/forks",
+        "full_name": "khulnasoft-lab/xsoar-docs",
+        "git_commits_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/git/commits{/sha}",
+        "git_refs_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/git/refs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/git/tags{/sha}",
+        "git_url": "git://github.com/khulnasoft-lab/xsoar-docs.git",
         "has_downloads": true,
         "has_issues": true,
         "has_pages": false,
         "has_projects": false,
         "has_wiki": false,
         "homepage": "https://xsoar.pan.dev/",
-        "hooks_url": "https://api.github.com/repos/demisto/content-docs/hooks",
-        "html_url": "https://github.com/demisto/content-docs",
+        "hooks_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/hooks",
+        "html_url": "https://github.com/khulnasoft-lab/xsoar-docs",
         "id": 225343886,
-        "issue_comment_url": "https://api.github.com/repos/demisto/content-docs/issues/comments{/number}",
-        "issue_events_url": "https://api.github.com/repos/demisto/content-docs/issues/events{/number}",
-        "issues_url": "https://api.github.com/repos/demisto/content-docs/issues{/number}",
-        "keys_url": "https://api.github.com/repos/demisto/content-docs/keys{/key_id}",
-        "labels_url": "https://api.github.com/repos/demisto/content-docs/labels{/name}",
+        "issue_comment_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/issues/comments{/number}",
+        "issue_events_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/issues/events{/number}",
+        "issues_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/issues{/number}",
+        "keys_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/keys{/key_id}",
+        "labels_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/labels{/name}",
         "language": "Python",
-        "languages_url": "https://api.github.com/repos/demisto/content-docs/languages",
+        "languages_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/languages",
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -172,12 +172,12 @@
             "spdx_id": "MIT",
             "url": "https://api.github.com/licenses/mit"
         },
-        "merges_url": "https://api.github.com/repos/demisto/content-docs/merges",
-        "milestones_url": "https://api.github.com/repos/demisto/content-docs/milestones{/number}",
+        "merges_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/merges",
+        "milestones_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/milestones{/number}",
         "mirror_url": null,
         "name": "content-docs",
         "node_id": "MDEwOlJlcG9zaXRvcnkyMjUzNDM4ODY=",
-        "notifications_url": "https://api.github.com/repos/demisto/content-docs/notifications{?since,all,participating}",
+        "notifications_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/notifications{?since,all,participating}",
         "open_issues": 10,
         "open_issues_count": 10,
         "owner": {
@@ -201,22 +201,22 @@
             "url": "https://api.github.com/users/demisto"
         },
         "private": false,
-        "pulls_url": "https://api.github.com/repos/demisto/content-docs/pulls{/number}",
+        "pulls_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/pulls{/number}",
         "pushed_at": "2020-10-16T14:12:06Z",
-        "releases_url": "https://api.github.com/repos/demisto/content-docs/releases{/id}",
+        "releases_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/releases{/id}",
         "size": 59183,
-        "ssh_url": "git@github.com:demisto/content-docs.git",
+        "ssh_url": "git@github.com:khulnasoft-lab/xsoar-docs.git",
         "stargazers_count": 10,
-        "stargazers_url": "https://api.github.com/repos/demisto/content-docs/stargazers",
-        "statuses_url": "https://api.github.com/repos/demisto/content-docs/statuses/{sha}",
-        "subscribers_url": "https://api.github.com/repos/demisto/content-docs/subscribers",
-        "subscription_url": "https://api.github.com/repos/demisto/content-docs/subscription",
-        "svn_url": "https://github.com/demisto/content-docs",
-        "tags_url": "https://api.github.com/repos/demisto/content-docs/tags",
-        "teams_url": "https://api.github.com/repos/demisto/content-docs/teams",
-        "trees_url": "https://api.github.com/repos/demisto/content-docs/git/trees{/sha}",
+        "stargazers_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/stargazers",
+        "statuses_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/statuses/{sha}",
+        "subscribers_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/subscribers",
+        "subscription_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/subscription",
+        "svn_url": "https://github.com/khulnasoft-lab/xsoar-docs",
+        "tags_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/tags",
+        "teams_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/teams",
+        "trees_url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs/git/trees{/sha}",
         "updated_at": "2020-10-16T14:12:07Z",
-        "url": "https://api.github.com/repos/demisto/content-docs",
+        "url": "https://api.github.com/repos/khulnasoft-lab/xsoar-docs",
         "watchers": 10,
         "watchers_count": 10
     },
@@ -242,6 +242,6 @@
     },
     "sha": "036ceaa0a0b631d9f487e436c9523086a0c63ed0",
     "state": "success",
-    "target_url": "https://circleci.com/gh/demisto/content-docs/153?utm_campaign=vcs-integration-link&utm_medium=referral&utm_source=github-build-link",
+    "target_url": "https://circleci.com/gh/khulnasoft-lab/xsoar-docs/153?utm_campaign=vcs-integration-link&utm_medium=referral&utm_source=github-build-link",
     "updated_at": "2020-10-16T14:40:41+00:00"
 }

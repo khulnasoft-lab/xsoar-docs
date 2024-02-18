@@ -131,7 +131,7 @@ In order to use this flow, the incident type must be set accordingly when creati
 
 If the incident type **Integrations and Incidents Health Check** is not chosen, fields will not be displayed correctly and the playbook will fail with this error:
 
-![griderror](https://raw.githubusercontent.com/demisto/content-docs/master/docs/doc_imgs/reference/HealthCheck_GridError.png)
+![griderror](https://raw.githubusercontent.com/khulnasoft-lab/xsoar-docs/master/docs/doc_imgs/reference/HealthCheck_GridError.png)
  
 
 ## Limitations

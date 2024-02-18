@@ -1,8 +1,8 @@
 ![Content logo](https://raw.githubusercontent.com/demisto/content/813c5e98d9ebace80d3f4e0ff88734cac6d5b5d5/xsoar_content_logo.png)
 
-[![CircleCI](https://circleci.com/gh/demisto/content-docs.svg?style=svg)](https://circleci.com/gh/demisto/content-docs)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/demisto/content-docs.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/demisto/content-docs/context:javascript) 
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/demisto/content-docs.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/demisto/content-docs/context:python)
+[![CircleCI](https://circleci.com/gh/khulnasoft-lab/xsoar-docs.svg?style=svg)](https://circleci.com/gh/khulnasoft-lab/xsoar-docs)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/khulnasoft-lab/xsoar-docs.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/khulnasoft-lab/xsoar-docs/context:javascript) 
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/khulnasoft-lab/xsoar-docs.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/khulnasoft-lab/xsoar-docs/context:python)
 
 # Cortex XSOAR Content Developer Docs
 This repo holds Cortex XSOAR Content Developer Docs. The Content Developer Docs provide information on how to develop and contribute content to the Cortex XSOAR platform. The actual content is hosted at the following repo: https://github.com/demisto/content. 
@@ -78,10 +78,10 @@ $ npm run build
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 ## Contributing
-Contributions are welcome and appreciated. If you find a bug or have suggestions for improvements, feel free to open an [Issue](https://github.com/demisto/content-docs/issues) or (better yet) submit a [Pull Request](https://github.com/demisto/content-docs/pulls). 
+Contributions are welcome and appreciated. If you find a bug or have suggestions for improvements, feel free to open an [Issue](https://github.com/khulnasoft-lab/xsoar-docs/issues) or (better yet) submit a [Pull Request](https://github.com/khulnasoft-lab/xsoar-docs/pulls). 
 
 Before merging any PRs, we need all contributors to sign a contributor license agreement. By signing a contributor license agreement, we ensure that the community is free to use your contributions.
 
 When you open a new pull request, a bot will evaluate whether you have signed the CLA. If required, the bot will comment on the pull request, including a link to accept the agreement. The CLA document is also available for review as a [PDF](https://github.com/demisto/content/blob/master/docs/cla.pdf).
 
-If the `license/cla` status check remains on *Pending*, even though all contributors have accepted the CLA, you can recheck the CLA status by visiting the following link (replace **[PRID]** with the ID of your PR): https://cla-assistant.io/check/demisto/content-docs?pullRequest=[PRID] .
+If the `license/cla` status check remains on *Pending*, even though all contributors have accepted the CLA, you can recheck the CLA status by visiting the following link (replace **[PRID]** with the ID of your PR): https://cla-assistant.io/check/khulnasoft-lab/xsoar-docs?pullRequest=[PRID] .

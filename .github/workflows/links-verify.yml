@@ -20,7 +20,7 @@ jobs:
     - name: content-docs checkout
       uses: actions/checkout@v2.4.0  # https://github.com/marketplace/actions/checkout
       with:
-        repository: demisto/content-docs
+        repository: khulnasoft-lab/xsoar-docs
         path: content-docs
         token: ${{ secrets.GITHUB_TOKEN }}
         fetch-depth: 0
