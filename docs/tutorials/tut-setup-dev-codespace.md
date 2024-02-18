@@ -54,10 +54,10 @@ After that, the generated environment will be kept in your GitHub account.
 8. Click **New Codespace** (this might take a few minutes).
 
 #### Examples
-![Creating a new fork](../doc_imgs/contributing/content-new-fork.gif)
+![Creating a new fork](/doc_imgs/contributing/content-new-fork.gif)
 *Creating a new fork*
 
-![Creating a new Codespace](../doc_imgs/tutorials/tut-setup-dev-codespace/create-a-new-codespace.gif)
+![Creating a new Codespace](/doc_imgs/tutorials/tut-setup-dev-codespace/create-a-new-codespace.gif)
 *Creating a new Codespace*
 
 
@@ -74,7 +74,7 @@ This is a one-time process that's done only the first time you open a Codespace.
 
 Once the initialization is completed and your Codespace is ready, you will be redirected to the IDE, where you can start your development.
 
-![Connecting to the Codespace (browser)](../doc_imgs/tutorials/tut-setup-dev-codespace/open-codespace-in-browser.gif)
+![Connecting to the Codespace (browser)](/doc_imgs/tutorials/tut-setup-dev-codespace/open-codespace-in-browser.gif)
 *Connecting to the Codespace (browser)*
 
 #### Visual Studio Code (local)

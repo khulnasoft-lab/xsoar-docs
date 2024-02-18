@@ -130,7 +130,7 @@ Before submitting a Pull Request to the [Cortex XSOAR GitHub Repository](https:/
 4. Create a short demo video presenting the product and your pack, and link it.  
     This will help our reviewers to better understand what the product is used for, and how the newly contributed content integrates with it.
 
-![Creating a fork](../doc_imgs/contributing/content-new-fork.gif)
+![Creating a fork](/doc_imgs/contributing/content-new-fork.gif)
 *Creating a new fork*
 
 ### Pull Request Creation
@@ -142,7 +142,7 @@ Click it, and then on the opened form, update the title and the description (usi
 
 For additional information on how to create a Pull Request from a fork, refer to the [official GitHub documentation](https://help.github.com/articles/creating-a-pull-request-from-a-fork).
 
-![Creating a new pull request](../doc_imgs/contributing/content-new-pr.png)
+![Creating a new pull request](/doc_imgs/contributing/content-new-pr.png)
 *Creating a new pull request*
 
 :::note
@@ -161,7 +161,7 @@ Before the review process begins, it is mandatory for you to complete two steps:
 Once you have created your pull request, an automated comment will be posted on your pull request with a link to the registration form, 
 and a tag of a member of our contribution team who will review your code.  
 
-![An example for a message by our bot on a PR](../doc_imgs/contributing/content-bot-pr-message.png)
+![An example for a message by our bot on a PR](/doc_imgs/contributing/content-bot-pr-message.png)
 *An example for a message by our bot on a PR*
 
 Once these requirements are fulfilled, our assigned contributions team member will start reviewing your code.  

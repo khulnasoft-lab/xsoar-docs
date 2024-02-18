@@ -74,11 +74,11 @@ Great, all the prerequisites are set! We can get started.
 
 Make sure you're logged on GitHub and navigate to the [Cortex XSOAR Content Repo](https://github.com/demisto/content) and click on **Fork**:
 
-![Fork Repository](../doc_imgs/tutorials/tut-setup-dev/04-fork.png)
+![Fork Repository](/doc_imgs/tutorials/tut-setup-dev/04-fork.png)
 
 Once the fork is complete, copy the URL:
 
-![Copy GitHub URL](../doc_imgs/tutorials/tut-setup-dev/05-copygithuburl.png)
+![Copy GitHub URL](/doc_imgs/tutorials/tut-setup-dev/05-copygithuburl.png)
 
 This is the fork where you will commit your code and, once ready, create the Pull Request to submit your contribution back to the Cortex XSOAR Content repository.
 
